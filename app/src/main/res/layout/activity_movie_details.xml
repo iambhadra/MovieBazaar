@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/movie_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorTitle"
+            android:elevation="3dp"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:id="@+id/movie_details_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/detail_movie_poster_iv"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:contentDescription="@string/image_content_description"
+                android:layout_marginStart="20dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/release_year_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/detail_movie_poster_iv"
+                    />
+
+                <TextView
+                    android:id="@+id/movie_duration_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="60dp"
+                    />
+
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                     />
+
+                <Button
+                    android:id="@+id/add_to_favourites_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTitle"
+                    android:text="@string/mark_as_favorite"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:outlineSpotShadowColor="@color/cardview_dark_background"/>
+    </LinearLayout>
+</ScrollView>
