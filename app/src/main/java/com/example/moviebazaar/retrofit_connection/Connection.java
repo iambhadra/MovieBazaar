@@ -28,7 +28,7 @@ public class Connection {
         if (retrofit == null) {
             Gson gson = new GsonBuilder().setLenient().create();
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://api.themoviedb.org/3/")
+                    .baseUrl("http://api.themoviedb.org/3/movie/")
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build();
         }

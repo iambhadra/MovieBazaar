@@ -4,4 +4,6 @@
     <string name="image_content_description">This image is used to display the poster of the image</string>
     <string name="favourite">Favourite</string>
     <string name="toprated">Top Rated</string>
+    <string name="watch_trailer">Watch Trailer</string>
+    <string name="watch_review">Watch Review</string>
 </resources>

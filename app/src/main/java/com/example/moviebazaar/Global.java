@@ -9,7 +9,7 @@ package com.example.moviebazaar;
 
 public class Global {
 
-    public static final String APIKEY = null;
+    public static final String APIKEY = "5b8092d4faf31e1f24edf92e9f054702";
     public static final String MOIVEDATATAG="movie";
     public static final String CATEGORYFAVORITE = "favourite";
     public static final String CATEGORYTOPRATED = "toprated";

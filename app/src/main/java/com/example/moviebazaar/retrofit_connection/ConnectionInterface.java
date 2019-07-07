@@ -10,6 +10,8 @@ package com.example.moviebazaar.retrofit_connection;
 
 
 import com.example.moviebazaar.models.MovieResponse;
+import com.example.moviebazaar.models.ReviewResponse;
+import com.example.moviebazaar.models.TrailerResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -17,15 +19,20 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ConnectionInterface {
-    @GET("movie/popular")
+    @GET("popular")
     Call<MovieResponse> getFavouriteMovies(@Query("api_key") String apiKey);
 
-    @GET("movie/top_rated")
+    @GET("top_rated")
     Call<MovieResponse> getTopRatedMovies(@Query("api_key") String apiKey);
 
-    @GET("movie/{id}")
+    @GET("{id}")
     Call<MovieResponse> getMovieDetails(@Path("id") int id, @Query("api_key") String apiKey);
 
+    @GET("{id}/videos")
+    Call<TrailerResponse> getTrailers(@Path("id") int movieId, @Query("api_key") String apikey);
+
+    @GET("{id}/reviews")
+    Call<ReviewResponse> getReview(@Path("id") int movieId, @Query("api_key") String apiKey);
 
 }
 

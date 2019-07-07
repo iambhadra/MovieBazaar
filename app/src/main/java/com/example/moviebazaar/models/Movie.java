@@ -41,6 +41,8 @@ public class Movie implements Serializable {
     private Boolean video;
     @SerializedName("vote_average")
     private Double voteAverage;
+        @SerializedName("key")
+    private String trailerKey;
 
     public Movie(String posterPath, boolean adult, String overview, String releaseDate, List<Integer> genreIds, Integer id,
                  String originalTitle, String originalLanguage, String title, String backdropPath, Double popularity,
@@ -61,6 +63,13 @@ public class Movie implements Serializable {
         this.voteAverage = voteAverage;
     }
 
+    public String getTrailerKey() {
+        return trailerKey;
+    }
+
+    public void setTrailerKey(String trailerKey) {
+        this.trailerKey = trailerKey;
+    }
     public String getPosterPath() {
         return posterPath;
     }

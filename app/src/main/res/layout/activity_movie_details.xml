@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/colorTitle"
                     android:text="@string/mark_as_favorite"
-                    android:visibility="gone" />
+                    />
             </LinearLayout>
         </LinearLayout>
 
@@ -90,6 +94,37 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_marginTop="5dp"
-            android:outlineSpotShadowColor="@color/cardview_dark_background"/>
+            android:background="@color/cardview_dark_background" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_watchtrailer"
+            android:paddingHorizontal="@dimen/marginpadding"
+            android:layout_marginStart="@dimen/marginpadding"
+            android:text="@string/watch_trailer"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_watchreview"
+            android:paddingHorizontal="@dimen/marginpadding"
+            android:layout_marginStart="@dimen/marginpadding"
+            android:text="@string/watch_review"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_thumbs_up_down_black_24dp"
+            android:drawablePadding="@dimen/marginpadding"
+            />
+
     </LinearLayout>
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/trailer_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </com.google.android.youtube.player.YouTubePlayerView>
+    </FrameLayout>
 </ScrollView>
