@@ -13,10 +13,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".TrailerViewActivity"
+            android:parentActivityName=".MovieDetailsActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"></activity>
         <activity android:name=".MovieDetailsActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"/>
-        <activity android:name=".MainActivity">
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

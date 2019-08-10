@@ -1,6 +1,6 @@
 package com.example.moviebazaar.retrofit_connection;
 /*
- * Title :- Movie Bazaar Application
+ * Title :- FavouriteMovie Bazaar Application
  * Version :- 1.0.0
  * Usage :- This class is used to establish the API end points to the movie DB.
          Here method of connection, request and response formats will be specified along with th query parameters.

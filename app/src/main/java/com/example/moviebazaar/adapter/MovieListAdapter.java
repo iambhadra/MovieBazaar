@@ -1,13 +1,15 @@
 package com.example.moviebazaar.adapter;
 /*
- * Title :- Movie Bazaar Application
+ * Title :- FavouriteMovie Bazaar Application
  * Version :- 1.0.0
  * Usage :-This is a recycler view class used to show the movie posters as menu to user.
  * Creator :- Veerabhadrarao kona
  * Date :- 01-06-2019
  * */
 import android.content.Context;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +24,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /*
-* Movie adapter was created to make connection to recycler view and data source
+* FavouriteMovie adapter was created to make connection to recycler view and data source
  * */
 
 public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.MovieHolder> {
@@ -85,7 +87,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         */
 
         Picasso.get()
-                .load("http://image.tmdb.org/t/p/w780/" + lMovieList.get(i).getPosterPath())
+                .load("http://image.tmdb.org/t/p/w780/" + lMovieList.get(i).getPoster_path())
                 .placeholder(R.drawable.ic_broken_image_black_24dp)
                 .error(R.drawable.ic_image_black_24dp)
                 .into(viewHolder.moviePoster_iv);
@@ -105,5 +107,6 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
     public interface movieItemClickListener {
         void onMovieItemClicked(int iPosition);
     }
+
 
 }

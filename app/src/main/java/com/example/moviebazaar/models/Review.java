@@ -1,5 +1,11 @@
 package com.example.moviebazaar.models;
-
+/*
+ * Title :- Movie Bazaar Application
+ * Version :- 1.0.1
+ * Usage :- This model will be used to fetch the response for review.
+ * Creator :- Veerabhadrarao kona
+ * Date :- 14-07-2019
+ * */
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
@@ -10,18 +16,9 @@ public class Review implements Serializable {
     @SerializedName("content")
     private String content;
     @SerializedName("id")
-    private String reviewId;
+    private String id;
     @SerializedName("url")
-    private String reviewUrl;
-
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
+    private String url;
 
     public String getAuthor() {
         return author;
@@ -31,21 +28,32 @@ public class Review implements Serializable {
         this.author = author;
     }
 
-    public String getReviewId() {
-        return reviewId;
+    public String getContent() {
+        return content;
     }
 
-    public void setReviewId(String reviewId) {
-        this.reviewId = reviewId;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getReviewUrl() {
-        return reviewUrl;
+    public String getId() {
+        return id;
     }
 
-    public void setReviewUrl(String reviewUrl) {
-        this.reviewUrl = reviewUrl;
+    public void setId(String id) {
+        this.id = id;
     }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+
+
 
 
 }

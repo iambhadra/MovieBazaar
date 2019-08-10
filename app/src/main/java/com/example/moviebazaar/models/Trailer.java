@@ -1,5 +1,11 @@
 package com.example.moviebazaar.models;
-
+/*
+ * Title :- Movie Bazaar Application
+ * Version :- 1.0.1
+ * Usage :- This model will be used to fetch the response for Trailer.
+ * Creator :- Veerabhadrarao kona
+ * Date :- 14-07-2019
+ * */
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;

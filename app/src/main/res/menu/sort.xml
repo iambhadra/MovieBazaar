@@ -12,5 +12,9 @@
         android:title="@string/toprated"
         android:orderInCategory="2"/>
         <!--app:showAsAction="ifRoom"-->
+    <item
+        android:id="@+id/mylist"
+        android:title="@string/myfavourite"
+        android:orderInCategory="2"/>
 
 </menu>

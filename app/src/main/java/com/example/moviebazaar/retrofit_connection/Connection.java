@@ -1,6 +1,6 @@
 package com.example.moviebazaar.retrofit_connection;
 /*
- * Title :- Movie Bazaar Application
+ * Title :- FavouriteMovie Bazaar Application
  * Version :- 1.0.0
  * Usage :- This class is used to establish the http connection to the movie DB.
          Here Retrofit method is used.

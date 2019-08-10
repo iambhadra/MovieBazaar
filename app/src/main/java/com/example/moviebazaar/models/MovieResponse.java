@@ -1,6 +1,6 @@
 package com.example.moviebazaar.models;
 /*
- * Title :- Movie Bazaar Application
+ * Title :- FavouriteMovie Bazaar Application
  * Version :- 1.0.0
  * Usage :- This is a model class of movie response.
         It used to response from the movie DB server.
